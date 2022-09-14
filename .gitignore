@@ -1,5 +1,6 @@
 # own directories
-data/
+data/*
+!data/laion_german_non_members/
 .idea/
 embeddings/
 lightning_logs/

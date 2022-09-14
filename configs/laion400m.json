@@ -1,0 +1,13 @@
+{
+    "LAION-400M": {
+        "indice_folder": "/workspace/data/laion400m_index100",
+        "provide_safety_model": false,
+        "enable_faiss_memory_mapping": true,
+        "enable_hdf5": true,
+        "use_arrow": false,
+        "reorder_metadata_by_ivf_index": true,
+        "columns_to_return": ["url", "caption"],
+        "enable_mclip_option": false,
+        "clip_model": "ViT-B/32"
+    }
+}
