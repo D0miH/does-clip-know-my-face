@@ -1,0 +1,7 @@
+# write here all softlinks that should be mounted within the docker container. Be sure that the last line of this file is an empty line.
+# e.g.:
+# /data/imagenet
+# /data/cifar10
+/data/facescrub
+/data/conceptual_captions
+/data/laion400m_index100

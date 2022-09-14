@@ -1,0 +1,7 @@
+data/
+embeddings/
+facescrub_training/clipping_privacy/
+facescrub_training/lightning_logs/
+facescrub_training/wandb/
+cc3m_experiments/trained_models/
+logs/
