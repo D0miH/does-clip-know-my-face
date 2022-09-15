@@ -78,7 +78,7 @@ for i in 0 1 2 3 4 5 6 7 8 9; do docker exec -d clip-retrieval${i}_gpu0 clip-ret
 
 ### Downloading Pre-Trained CLIP Models
 
-Before running the notebooks of the CC3M experiments you first have to download the pretrained models `checkpoints.zip` from the [GitHub release page](https://github.com/D0miH/clipping_privacy/releases) and extract it to `cc3m_experiments/`.
+Before running the notebooks of the CC3M experiments you first have to download the pretrained models from the [GitHub release page](https://github.com/D0miH/clipping_privacy/releases) and extract them to `cc3m_experiments/checkpoints`. Don't forget to unzip the ResNet-50x4 model files after moving them in the checkpoints folder.
 
 ### Download the ResNet-50 trained on FaceScrub
 
