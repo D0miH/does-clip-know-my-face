@@ -1,0 +1,24 @@
+{
+  "CC3M-Train": {
+    "indice_folder": "/workspace/data/conceptual_captions/clip_retrieval_index/train",
+    "provide_safety_model": false,
+    "enable_faiss_memory_mapping": true,
+    "use_arrow": false,
+    "enable_hdf5": false,
+    "reorder_metadata_by_ivf_index": false,
+    "columns_to_return": ["url", "image_path"],
+    "clip_model": "ViT-L/14",
+    "enable_mclip_option": false
+  },
+  "CC3M-Val": {
+    "indice_folder": "/workspace/data/conceptual_captions/clip_retrieval_index/val",
+    "provide_safety_model": false,
+    "enable_faiss_memory_mapping": true,
+    "use_arrow": false,
+    "enable_hdf5": false,
+    "reorder_metadata_by_ivf_index": false,
+    "columns_to_return": ["url", "image_path"],
+    "clip_model": "ViT-L/14",
+    "enable_mclip_option": false
+  }
+}
