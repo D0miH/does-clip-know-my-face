@@ -10,7 +10,7 @@ celebrities (<a href="https://commons.wikimedia.org/wiki/File:Goldene_Kamera_201
 Abstract: _As deep learning is now used in many real-world applications, research has focused increasingly on the privacy of deep learning models and how to prevent attackers from obtaining sensitive information about the training data. However, image-text models like CLIP have not yet been looked at in the context of privacy attacks. While membership inference attacks aim to tell whether a specific data point was used for training, we introduce a new type of privacy attack, named identity inference attack (IDIA), designed for multi-modal image-text models like CLIP.
 Using IDIAs, an attacker can reveal whether a particular person, was part of the training data by querying the model in a black-box fashion with different images of the same person. Letting the model choose from a wide variety of possible text labels, the attacker can probe the model whether it recognizes the person and, therefore, was used for training. Through several experiments on CLIP, we show that the attacker can identify individuals used for training with very high accuracy and that the model learns to connect the names with the depicted people. Our experiments show that a multi-modal image-text model indeed leaks sensitive information about its training data and, therefore, should be handled with care._
 
-[Arxiv Preprint (PDF)](https://arxiv.org) TBA!
+[Arxiv](https://arxiv.org/abs/2209.07341) [PDF](https://arxiv.org/pdf/2209.07341.pdf)
 
 ## Identity Inference Attack (IDIA)
 
