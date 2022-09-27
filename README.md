@@ -91,3 +91,15 @@ Download the image embeddings of the FaceScrub dataset calculated using the Open
 ### Run the Experiments
 
 After all setup steps are done, the notebooks can be run in the order following the numbering.
+
+## Citation
+If you build upon our work, please don't forget to cite us.
+```
+@article{hintersdorf22clipping,
+  author = {Hintersdorf, Dominik and Struppek, Lukas and Kersting, Kristian},
+  title = {CLIPping Privacy: Identity Inference Attacks on Multi-Modal Machine Learning Models},
+  journal = {arXiv preprint},
+  volume = {arXiv:2209.07341},
+  year = {2022},
+}
+```
