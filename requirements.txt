@@ -12,3 +12,6 @@ seaborn
 autokeras
 pytorch-lightning
 lightning-bolts
+torchmetrics
+wandb
+sklearn
