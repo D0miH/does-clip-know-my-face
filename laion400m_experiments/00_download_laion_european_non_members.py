@@ -2,8 +2,8 @@ import os
 import urllib.request
 from tqdm import tqdm
 
-actors_dir = './data/laion_german_non_members/actors/'
-actresses_dir = './data/laion_german_non_members/actresses/'
+actors_dir = './data/laion_european_celebs/actors/'
+actresses_dir = './data/laion_european_celebs/actresses/'
 
 def read_actor_files(folder_path):
     urls = {}

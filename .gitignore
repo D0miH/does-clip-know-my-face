@@ -1,6 +1,7 @@
 # own directories
 data/*
 !data/laion_german_non_members/
+!data/laion_european_celebs/
 .idea/
 embeddings/
 lightning_logs/
