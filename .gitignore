@@ -2,6 +2,8 @@
 data/
 data/**/images/*
 !data/laion_european_celebs/
+!data/common_first_names.csv
+!data/common_last_names_US_2010.csv
 .idea/
 embeddings/
 lightning_logs/
