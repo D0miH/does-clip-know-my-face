@@ -1,5 +1,6 @@
 # own directories
-data/*
+data/
+data/**/images/*
 !data/laion_european_celebs/
 .idea/
 embeddings/
@@ -8,6 +9,8 @@ wandb/
 logs/
 trained_models/
 plots/
+**/prediction_dfs
+**/prediction_metrics_dfs
 
 
 # Byte-compiled / optimized / DLL files
