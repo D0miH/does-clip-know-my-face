@@ -13,7 +13,7 @@ trained_models/
 plots/
 **/prediction_dfs
 **/prediction_metrics_dfs
-
+**/checkpoints
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
