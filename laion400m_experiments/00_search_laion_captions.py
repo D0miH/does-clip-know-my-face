@@ -77,6 +77,6 @@ for emb, meta in embedding_reader(
     
 if len(samples_with_names_in_caption) > 0:
     df = pd.concat(samples_with_names_in_caption).reset_index(drop=True)
-    df.to_csv('laion_experiment/names_found_in_laion400m_caption_search.csv')
+    df.to_csv('laion400m_experiments/names_found_in_laion400m_caption_search.csv')
 else:
     print('None of the given names were found in the dataset')

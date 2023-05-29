@@ -28,6 +28,7 @@ def save_images_to_folder(folder_path, url_dict):
         base_folder = os.path.join(folder_path, name)
         if os.path.exists(base_folder):
             print(f'The image folder {base_folder} already exists. Skipping folder.')
+            continue
         os.makedirs(base_folder)
         for i, url in tqdm(enumerate(url_list), desc=name, leave=False):
             url = urllib.parse.quote(url, safe='://?=&(),%+')

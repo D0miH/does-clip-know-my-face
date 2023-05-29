@@ -1,26 +1,45 @@
 #!/bin/bash
 
 # default name for the container
-NAME=clipping_privacy
+NAME=does_clip_know_my_face
 WANDB_KEY=""
 
-POSITIONAL=()
-while [ $# -gt 0 ]
-do
-key="$1"
+help() {
+  # display the help text
+  echo "This script builds a docker image using the Dockerfile."
+  echo 
+  echo "Usage: docker_build.sh [OPTION...]"
+  echo 
+  echo "options:"
+  echo "-n, --name      Specify a name for the Docker image. (Default: ${NAME})"
+  echo "-w, --wandb     Specify your Weights and Biases API key to use WandB within the Docker container."
+  echo "-h, --help      Prints help."
+}
 
-case $key in
+POSITIONAL=()
+while [ $# -gt 0 ]; do
+  key="$1"
+
+  case $key in
     -n|--name)
-    NAME="$2"
-    shift # passed argument
-    shift # passed value
-    ;;
+      NAME="$2"
+      shift # passed argument
+      shift # passed value
+      ;;
     -w|--wandb)
-    WANDB_KEY="$2"
-    shift
-    shift
-    ;;
-esac
+      WANDB_KEY="$2"
+      shift
+      shift
+      ;;
+    -h|--help)
+      help
+      exit 0
+      ;;
+    *)
+      echo "Argument '$key' unknown"
+      exit 1
+      ;;
+  esac
 done
 set -- "${POSITIONAL[@]}"
 

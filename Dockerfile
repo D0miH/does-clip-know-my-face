@@ -16,7 +16,7 @@ RUN apt-get -y upgrade
 RUN apt-get -y install git nano ffmpeg libsm6 libxext6 uuid-runtime
 RUN conda install --rev 1
 RUN conda install python=3.8
-RUN conda install ipykernel ipywidgets pytorch torchvision cudatoolkit=11.3 -c pytorch
-RUN pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+RUN conda install ipykernel ipywidgets pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch
+RUN pip install -r requirements.txt
 
 RUN if [ -z "$WANDB_KEY" ] ; then echo WandB API key not provided ; else wandb login $WANDB_KEY; fi
