@@ -2,7 +2,7 @@
 IMAGE_NAME=does_clip_know_my_face
 CONTAINER_NAME=does_clip_know_my_face
 DEVICES=""
-MOUNTING_FILE=""
+MOUNTING_FILE="mounts.docker"
 SHM_SIZE="16G"
 PORT_MAPPING=""
 
